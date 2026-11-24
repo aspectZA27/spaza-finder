@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Spaza Finder</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="map"></div>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+        <dialog id="shop-dialog">
+            <form id="shop-form" class="shop-form">
+                <h2>Add a shop</h2>
+
+                <label
+                    >Name
+                    <input type="text" id="shop-name" required />
+                </label>
+
+                <label
+                    >Opening hours
+                    <label>From: <input type="time" id="shop-hours-from" /></label>
+                    <label>To: <input type="time" id="shop-hours-to" /></label>
+                </label>
+
+                <label
+                    >What do they sell?
+                    <textarea id="shop-description"></textarea>
+                </label>
+
+                <button type="submit">Save</button>
+                <button type="button" id="cancel-btn">Cancel</button>
+            </form>
+        </dialog>
+    </body>
+    <script src="app.js"></script>
+</html>

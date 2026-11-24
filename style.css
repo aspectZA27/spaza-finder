@@ -1,0 +1,54 @@
+html,
+body,
+#map {
+    height: 100%;
+    margin: 0;
+}
+
+dialog label {
+    display: block;
+    margin-bottom: 12px;
+}
+dialog input,
+dialog select,
+dialog textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#shop-dialog {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+#shop-form {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    align-items: center;
+}
+
+.shop-popup {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    align-items: center;
+}
+.shop-title {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    align-self: center;
+}
